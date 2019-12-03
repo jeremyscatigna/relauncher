@@ -1,10 +1,8 @@
 ![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher1.png)
-![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher2.png)
-
-relauncher
-==========
 
 CLI to create a new react app using every tools you love
+
+![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher2.png)
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/relauncher.svg)](https://npmjs.org/package/relauncher)
