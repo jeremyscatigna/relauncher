@@ -1,6 +1,6 @@
 {
   "name": "relauncher",
-  "description": "CLI to create a new react app using every tools you love",
+  "description": "Create a new react app using every tools you love",
   "version": "0.0.0",
   "author": "Jeremy Scatigna @jeremyscatigna",
   "bin": {
