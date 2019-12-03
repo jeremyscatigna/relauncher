@@ -1,6 +1,6 @@
 ![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher-logo.png)
 
-![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher.png)
+![Image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher.png)
 
 relauncher
 ==========
