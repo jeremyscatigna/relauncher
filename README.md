@@ -1,6 +1,12 @@
 relauncher
 ==========
 
+<p align="center">
+  <img alt="relauncher" src="https://raw.githubusercontent.com/relauncher/logo/master/relauncher.png" width="700">
+</p>
+
+==========
+
 CLI to create a new react app using every tools you love
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
