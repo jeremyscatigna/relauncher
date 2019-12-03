@@ -1,6 +1,5 @@
 ![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher1.png)
 
-Create a new react app using every tools you love
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/relauncher.svg)](https://npmjs.org/package/relauncher)
@@ -8,6 +7,8 @@ Create a new react app using every tools you love
 [![codecov](https://codecov.io/gh/jeremyscatigna/relauncher/branch/master/graph/badge.svg)](https://codecov.io/gh/jeremyscatigna/relauncher)
 [![Downloads/week](https://img.shields.io/npm/dw/relauncher.svg)](https://npmjs.org/package/relauncher)
 [![License](https://img.shields.io/npm/l/relauncher.svg)](https://github.com/jeremyscatigna/relauncher/blob/master/package.json)
+
+Create a new react app using every tools you love
 
 ![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher2.png)
 
