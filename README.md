@@ -1,10 +1,6 @@
+![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher.png)
+
 relauncher
-==========
-
-<p align="center">
-  <img alt="relauncher" src="https://raw.githubusercontent.com/relauncher/logo/master/relauncher.png" width="700">
-</p>
-
 ==========
 
 CLI to create a new react app using every tools you love
