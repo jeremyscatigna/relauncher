@@ -2,14 +2,14 @@
 
 CLI to create a new react app using every tools you love
 
-![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher2.png)
-
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/relauncher.svg)](https://npmjs.org/package/relauncher)
 [![CircleCI](https://circleci.com/gh/jeremyscatigna/relauncher.svg?style=svg)](https://circleci.com/gh/jeremyscatigna/relauncher)
 [![codecov](https://codecov.io/gh/jeremyscatigna/relauncher/branch/master/graph/badge.svg)](https://codecov.io/gh/jeremyscatigna/relauncher)
 [![Downloads/week](https://img.shields.io/npm/dw/relauncher.svg)](https://npmjs.org/package/relauncher)
 [![License](https://img.shields.io/npm/l/relauncher.svg)](https://github.com/jeremyscatigna/relauncher/blob/master/package.json)
+
+![header image](https://github.com/jeremyscatigna/relauncher/blob/master/relauncher2.png)
 
 <!-- toc -->
 * [Usage](#usage)
