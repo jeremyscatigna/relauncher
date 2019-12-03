@@ -6,7 +6,7 @@ CLI to create a new react app using every tools you love
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/relauncher.svg)](https://npmjs.org/package/relauncher)
 [![CircleCI](https://circleci.com/gh/jeremyscatigna/relauncher.svg?style=svg)](https://circleci.com/gh/jeremyscatigna/relauncher)
-[![Codecov](https://codecov.io/gh/jeremyscatigna/relauncher/branch/master/graph/badge.svg)](https://codecov.io/gh/jeremyscatigna/relauncher)
+[![codecov](https://codecov.io/gh/jeremyscatigna/relauncher/branch/master/graph/badge.svg)](https://codecov.io/gh/jeremyscatigna/relauncher)
 [![Downloads/week](https://img.shields.io/npm/dw/relauncher.svg)](https://npmjs.org/package/relauncher)
 [![License](https://img.shields.io/npm/l/relauncher.svg)](https://github.com/jeremyscatigna/relauncher/blob/master/package.json)
 
