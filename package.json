@@ -21,13 +21,16 @@
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
-    "@types/node": "^10",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
     "auto-changelog": "^1.16.2",
     "eslint": "^5.13",
     "eslint-config-oclif": "^3.1",
     "eslint-config-oclif-typescript": "^0.1",
     "gh-release": "^3.5.0",
     "globby": "^10",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
     "ts-node": "^8",
     "typescript": "^3.3"
   },
@@ -57,7 +60,7 @@
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-    "test": "echo NO TESTS",
+    "test": "jest",
     "preversion": "oclif-dev readme && git add README.md",
     "prepublishOnly": "git push && git push --tags && gh-release",
     "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md"
