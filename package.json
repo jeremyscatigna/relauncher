@@ -11,14 +11,22 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
-    "tslib": "^1"
+    "chalk": "^3.0.0",
+    "copy-template-dir": "^1.4.0",
+    "html-webpack-plugin": "^3.2.0",
+    "tslib": "^1",
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.9.0",
+    "yarn-or-npm": "^3.0.1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
     "@types/node": "^10",
+    "auto-changelog": "^1.16.2",
     "eslint": "^5.13",
     "eslint-config-oclif": "^3.1",
     "eslint-config-oclif-typescript": "^0.1",
+    "gh-release": "^3.5.0",
     "globby": "^10",
     "ts-node": "^8",
     "typescript": "^3.3"
@@ -48,10 +56,10 @@
   "repository": "jeremyscatigna/relauncher",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
-    "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
-    "version": "oclif-dev readme && git add README.md"
+    "preversion": "oclif-dev readme && git add README.md && yarn copyREADME",
+    "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md"
   },
   "types": "lib/index.d.ts"
 }
