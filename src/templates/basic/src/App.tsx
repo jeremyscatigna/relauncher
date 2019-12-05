@@ -1,7 +1,7 @@
 import React from "react";
 
-import "./styles/app.css";
-import Hello from "components/Hello";
+import "./styles/app.scss";
+import Hello from "./components/Hello";
 
 class App extends React.Component {
   render() {

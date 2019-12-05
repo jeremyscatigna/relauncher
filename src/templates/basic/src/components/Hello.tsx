@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/hello.css";
+import "../styles/hello.scss";
 
 class Hello extends React.Component {
   render() {
