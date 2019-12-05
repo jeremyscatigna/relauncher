@@ -58,7 +58,7 @@
     "postpack": "rm -f oclif.manifest.json",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
-    "preversion": "oclif-dev readme && git add README.md && yarn copyREADME",
+    "preversion": "oclif-dev readme && git add README.md",
     "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md"
   },
   "types": "lib/index.d.ts"
