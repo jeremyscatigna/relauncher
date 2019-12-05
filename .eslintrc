@@ -1,6 +1,6 @@
 {
-  "extends": [
-    "oclif",
-    "oclif-typescript"
-  ]
+  "rules": {
+    "comma-dangle": ["error", "never"]
+  },
+  "extends": ["oclif", "oclif-typescript"]
 }
