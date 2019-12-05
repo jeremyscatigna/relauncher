@@ -1,7 +1,7 @@
 {
   "name": "relauncher",
   "description": "Create a new react app using every tools you love",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Jeremy Scatigna @jeremyscatigna",
   "bin": {
     "relauncher": "./bin/run"
