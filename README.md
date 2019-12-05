@@ -23,7 +23,7 @@ $ npm install -g relauncher
 $ relauncher COMMAND
 running command...
 $ relauncher (-v|--version|version)
-relauncher/0.0.1 darwin-x64 node-v10.16.0
+relauncher/0.0.2 darwin-x64 node-v10.16.0
 $ relauncher --help [COMMAND]
 USAGE
   $ relauncher COMMAND
@@ -53,7 +53,7 @@ EXAMPLE
   $ relauncher build
 ```
 
-_See code: [src/commands/build.ts](https://github.com/jeremyscatigna/relauncher/blob/v0.0.1/src/commands/build.ts)_
+_See code: [src/commands/build.ts](https://github.com/jeremyscatigna/relauncher/blob/v0.0.2/src/commands/build.ts)_
 
 ## `relauncher create [DIR]`
 
@@ -70,7 +70,7 @@ EXAMPLE
   $ relauncher create myapp
 ```
 
-_See code: [src/commands/create.ts](https://github.com/jeremyscatigna/relauncher/blob/v0.0.1/src/commands/create.ts)_
+_See code: [src/commands/create.ts](https://github.com/jeremyscatigna/relauncher/blob/v0.0.2/src/commands/create.ts)_
 
 ## `relauncher hello [FILE]`
 
@@ -90,7 +90,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/jeremyscatigna/relauncher/blob/v0.0.1/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/jeremyscatigna/relauncher/blob/v0.0.2/src/commands/hello.ts)_
 
 ## `relauncher help [COMMAND]`
 
@@ -124,5 +124,5 @@ EXAMPLE
   $ relauncher serve
 ```
 
-_See code: [src/commands/serve.ts](https://github.com/jeremyscatigna/relauncher/blob/v0.0.1/src/commands/serve.ts)_
+_See code: [src/commands/serve.ts](https://github.com/jeremyscatigna/relauncher/blob/v0.0.2/src/commands/serve.ts)_
 <!-- commandsstop -->
