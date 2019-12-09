@@ -15,12 +15,14 @@
     "copy-template-dir": "^1.4.0",
     "html-webpack-plugin": "^3.2.0",
     "tslib": "^1",
+    "vue-loader": "^15.7.2",
     "webpack": "^4.41.2",
     "webpack-dev-server": "^3.9.0",
     "yarn-or-npm": "^3.0.1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
+    "@types/inquirer": "^6.5.0",
     "@types/jest": "^24.0.23",
     "@types/node": "^12.12.14",
     "auto-changelog": "^1.16.2",
@@ -29,6 +31,7 @@
     "eslint-config-oclif-typescript": "^0.1",
     "gh-release": "^3.5.0",
     "globby": "^10",
+    "inquirer": "^7.0.0",
     "jest": "^24.9.0",
     "ts-jest": "^24.2.0",
     "ts-node": "^8",
