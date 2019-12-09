@@ -16,7 +16,7 @@ export default class Create extends Command {
 
   static flags = {
     help: flags.help({ char: 'h' }),
-    library: flags.string({ options: ['react'] })
+    library: flags.string({ options: ['react', 'vue'] })
   }
 
   static args = [{ name: 'dir' }]
@@ -38,13 +38,15 @@ export default class Create extends Command {
           name: 'library',
           message: `${chalk.bold('Choose your favorite library!')} 👇`,
           type: 'list',
-          choices: [{ name: 'react' }]
+          choices: [{ name: 'react' }, { name: 'vue' }]
         }
       ])
       library = responses.library
     }
     if (library === 'react') {
       scaffoldProject(dirName, vars, this, library, '../templates/react/basic')
+    } else if (library === 'vue') {
+      scaffoldProject(dirName, vars, this, library, '../templates/vue/basic')
     } else {
     }
   }

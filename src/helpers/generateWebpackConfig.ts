@@ -1,20 +1,21 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { VueLoaderPlugin } = require('vue-loader')
 
 export function generateWebpackConfig() {
   return {
     // webpack will take the files from ./src/index
-    entry: "./src/index.tsx",
+    entry: './src/index.tsx',
 
     // and output it into /dist as bundle.js
     output: {
-      path: path.join(__dirname, "/dist"),
-      filename: "bundle.js"
+      path: path.join(process.cwd(), '/dist'),
+      filename: 'bundle.js'
     },
 
     // adding .ts and .tsx to resolve.extensions will help babel look for .ts and .tsx files to transpile
     resolve: {
-      extensions: [".ts", ".tsx", ".js"]
+      extensions: ['.ts', '.tsx', '.js']
     },
 
     module: {
@@ -24,25 +25,25 @@ export function generateWebpackConfig() {
           test: /\.(ts|js)x?$/,
           exclude: /node_modules/,
           use: {
-            loader: "babel-loader"
+            loader: 'babel-loader'
           }
         },
 
         // css-loader to bundle all the css files into one file and style-loader to add all the styles  inside the style tag of the document
         {
           test: /\.css$/,
-          use: ["style-loader", "css-loader"]
+          use: ['style-loader', 'css-loader']
         },
         {
           test: /\.scss$/,
-          use: ["style-loader", "css-loader", "sass-loader"]
+          use: ['style-loader', 'css-loader', 'sass-loader']
         }
       ]
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: "./src/index.html"
+        template: './src/index.html'
       })
     ]
-  };
+  }
 }
