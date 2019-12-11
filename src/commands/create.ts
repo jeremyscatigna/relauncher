@@ -16,7 +16,8 @@ export default class Create extends Command {
 
   static flags = {
     help: flags.help({ char: 'h' }),
-    library: flags.string({ options: ['react', 'vue'] })
+    library: flags.string({ options: ['react', 'vue'] }),
+    options: flags.string({ options: ['redux', 'apollo'] })
   }
 
   static args = [{ name: 'dir' }]
@@ -29,7 +30,7 @@ export default class Create extends Command {
       currentYear: new Date().toISOString().slice(0, 4)
     }
 
-    this.log(`Welcome to ${chalk.magenta.bold('relauncher')}! 💪`)
+    this.log(`${chalk.bold('Welcome to')} ${chalk.magenta.bold('relauncher')}! 💪`)
     this.log(`${chalk.bold('Time to setup a modern web app using every tools you love ❤️')}`)
     let library = flags.library
     if (!library) {
@@ -43,8 +44,31 @@ export default class Create extends Command {
       ])
       library = responses.library
     }
+    let options = flags.options
+    if (!options) {
+      let responses: any = await inquirer.prompt([
+        {
+          name: 'options',
+          message: `${chalk.bold('Pick the tools you love!')} ❤️`,
+          type: 'checkbox',
+          choices: [
+            { name: 'redux', short: 'redux', value: 'redux', checked: false },
+            { name: 'apollo', short: 'apollo', value: 'apollo', checked: false }
+          ]
+        }
+      ])
+      options = responses.options
+    }
     if (library === 'react') {
-      scaffoldProject(dirName, vars, this, library, '../templates/react/basic')
+      if (options && options.length === 0) {
+        scaffoldProject(dirName, vars, this, library, '../templates/react/basic')
+      } else if (options && options.length === 1 && options[0] === 'redux') {
+        scaffoldProject(dirName, vars, this, library, '../templates/react/react-redux')
+      } else if (options && options.length === 1 && options[0] === 'apollo') {
+        scaffoldProject(dirName, vars, this, library, '../templates/react/react-apollo')
+      } else if (options && options.length === 2) {
+        scaffoldProject(dirName, vars, this, library, '../templates/react/react-full')
+      }
     } else if (library === 'vue') {
       scaffoldProject(dirName, vars, this, library, '../templates/vue/basic')
     } else {
